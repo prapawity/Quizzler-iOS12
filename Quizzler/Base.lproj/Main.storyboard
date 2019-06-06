@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -64,20 +62,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFw-9a-LSS">
-                                        <rect key="frame" x="0.0" y="25" width="24" height="14"/>
+                                        <rect key="frame" x="0.0" y="25" width="375" height="14"/>
                                         <color key="backgroundColor" red="0.92549019610000005" green="0.72941176470000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="24" id="jM7-aX-faO"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.16847139596939087" green="0.51802176237106323" blue="0.82454192638397217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="qil-6C-XPA" firstAttribute="top" secondItem="gHh-ve-yfT" secondAttribute="top" id="4Km-ra-lKe"/>
+                                    <constraint firstItem="IFw-9a-LSS" firstAttribute="leading" secondItem="gHh-ve-yfT" secondAttribute="leading" id="50f-u2-6Y2"/>
                                     <constraint firstItem="c0R-Fj-fUI" firstAttribute="top" secondItem="gHh-ve-yfT" secondAttribute="top" id="FrD-bq-Sm6"/>
                                     <constraint firstItem="qil-6C-XPA" firstAttribute="left" secondItem="gHh-ve-yfT" secondAttribute="left" constant="8" id="FwJ-uo-2gJ"/>
                                     <constraint firstItem="IFw-9a-LSS" firstAttribute="top" secondItem="qil-6C-XPA" secondAttribute="bottom" constant="4" id="INO-IX-CLh"/>
                                     <constraint firstItem="IFw-9a-LSS" firstAttribute="leading" secondItem="gHh-ve-yfT" secondAttribute="leading" id="NRz-GC-dzM"/>
+                                    <constraint firstAttribute="trailing" secondItem="IFw-9a-LSS" secondAttribute="trailing" id="hTq-hj-BCr"/>
                                     <constraint firstAttribute="height" constant="47" id="imV-DY-geY"/>
                                     <constraint firstItem="c0R-Fj-fUI" firstAttribute="left" relation="greaterThanOrEqual" secondItem="qil-6C-XPA" secondAttribute="right" constant="20" id="kFx-NR-tjk"/>
                                     <constraint firstAttribute="right" secondItem="c0R-Fj-fUI" secondAttribute="right" constant="8" id="kra-GC-qQe"/>
@@ -125,15 +122,27 @@
                                             <action selector="answerPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E6e-2f-z0q"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiU-Yj-uU8">
+                                        <rect key="frame" x="162" y="306" width="51" height="30"/>
+                                        <state key="normal" title="Restart">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Restart:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EM3-dW-Moi"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.16847139596939087" green="0.51802176237106323" blue="0.82454192638397217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="NiU-Yj-uU8" secondAttribute="bottom" constant="50" id="1j7-CU-9sr"/>
                                     <constraint firstAttribute="right" secondItem="T5N-xc-sVz" secondAttribute="right" constant="25" id="OPX-As-oBh"/>
                                     <constraint firstItem="exB-ZS-1U0" firstAttribute="centerY" secondItem="lYI-Ly-TJ0" secondAttribute="centerY" id="U2R-9n-8Yj"/>
                                     <constraint firstItem="T5N-xc-sVz" firstAttribute="centerY" secondItem="lYI-Ly-TJ0" secondAttribute="centerY" id="X68-aS-4q0"/>
                                     <constraint firstItem="exB-ZS-1U0" firstAttribute="left" secondItem="lYI-Ly-TJ0" secondAttribute="left" constant="25" id="aCu-qw-v0d"/>
+                                    <constraint firstItem="NiU-Yj-uU8" firstAttribute="leading" secondItem="lYI-Ly-TJ0" secondAttribute="leading" constant="162" id="aU8-VR-JZN"/>
                                     <constraint firstItem="T5N-xc-sVz" firstAttribute="leading" secondItem="exB-ZS-1U0" secondAttribute="trailing" constant="14" id="bNV-7U-rae"/>
                                     <constraint firstItem="exB-ZS-1U0" firstAttribute="width" secondItem="T5N-xc-sVz" secondAttribute="width" id="d4x-tK-Odu"/>
+                                    <constraint firstAttribute="trailing" secondItem="NiU-Yj-uU8" secondAttribute="trailing" constant="162" id="hAl-sH-W6Z"/>
                                     <constraint firstItem="exB-ZS-1U0" firstAttribute="height" secondItem="T5N-xc-sVz" secondAttribute="height" id="kdJ-1C-vWq"/>
                                 </constraints>
                             </view>
@@ -155,15 +164,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="falseBtn" destination="T5N-xc-sVz" id="l11-tp-vrS"/>
                         <outlet property="progressBar" destination="IFw-9a-LSS" id="FBG-em-yZa"/>
                         <outlet property="progressLabel" destination="qil-6C-XPA" id="vOI-gf-aRi"/>
                         <outlet property="questionLabel" destination="4GJ-Ce-brK" id="pIn-gm-ACF"/>
+                        <outlet property="restartBtn" destination="NiU-Yj-uU8" id="mfa-6a-Dvn"/>
                         <outlet property="scoreLabel" destination="c0R-Fj-fUI" id="31D-zq-NpU"/>
+                        <outlet property="trueBtn" destination="exB-ZS-1U0" id="yBh-Yl-sUl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="259.19999999999999" y="329.2353823088456"/>
+            <point key="canvasLocation" x="258.39999999999998" y="328.81773399014781"/>
         </scene>
     </scenes>
 </document>
